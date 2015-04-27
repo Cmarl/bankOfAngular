@@ -1,0 +1,10 @@
+h1 Accounts
+.row
+  .col-xs-4
+    form(name='accountTypeForm', novalidate)
+      .form-group
+        label(for='email') Account Name
+        input.form-control#accountName(type='text', name='accountName', ng-model='accountName')
+      .form-group
+        button.btn.btn-default(type='default', ng-click='addAccount(accountName)') Add Account
+  .col-xs-4
